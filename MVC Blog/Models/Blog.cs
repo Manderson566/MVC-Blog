@@ -18,6 +18,6 @@ namespace MVC_Blog.Models
 
     public class BlogContext : DbContext
     {
-        DbSet<Blog> Blogs { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

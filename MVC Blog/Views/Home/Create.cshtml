@@ -1,0 +1,44 @@
+﻿
+
+
+<div class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Mic Blog</h1>
+                    <hr class="small">
+                    <span class="subheading">Mic has all the best blogs.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    @using (Html.BeginForm("Create", "Home"))
+    {
+
+        <p>
+            @Html.TextBox("Title", null, new { @class = "form-control", placeholder = "Blog Title" })
+        </p>
+
+        <p>
+            @Html.TextBox("TeaserText", null, new { @class = "form-control", placeholder = "Blog Teaser Text" })
+        </p>
+
+        <p>
+            @Html.TextBox("Author", null, new { @class = "form-control", placeholder = "Your Name" })
+        </p>
+
+        <p>
+            @Html.TextBox("Body", null, new { @class = "form-control", placeholder = "Blog Body" })
+        </p>
+
+        <p>
+            <input type="submit" class="btn btn-default" value="Create" />
+        </p>
+
+    }
+</div>
